@@ -36,12 +36,12 @@ QCodeDecoder.prototype.isCanvasSupported = function () {
  * mediaDevices.getUserMedia enabled in the browser.
  */
 QCodeDecoder.prototype.hasGetUserMedia = function () {
-  navigator.mediaDevices.getUserMedia = navigator.mediaDevices.getUserMedia ||
-                           navigator.webkitGetUserMedia ||
-                           navigator.mozGetUserMedia ||
-                           navigator.msGetUserMedia;
+  mediaDevices.getUserMedia = mediaDevices.getUserMedia ||
+                           mediaDevices.webkitGetUserMedia ||
+                           mediaDevices.mozGetUserMedia ||
+                           mediaDevices.msGetUserMedia;
 
-  return !!(navigator.mediaDevices.getUserMedia);
+  return !!(mediaDevices.getUserMedia);
 };
 
 /**
@@ -133,7 +133,7 @@ QCodeDecoder.prototype.decodeFromCamera = function (videoElem, cb, once) {
   if (!this.hasGetUserMedia())
     cb(new Error('Couldn\'t get video from camera'));
 
-  navigator.mediaDevices.getUserMedia(this.videoConstraints, function (stream) {
+  mediaDevices.getUserMedia(this.videoConstraints, function (stream) {
     videoElem.src = window.URL.createObjectURL(stream);
     scope.videoElem = videoElem;
     scope.stream = stream;
