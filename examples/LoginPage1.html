@@ -1,0 +1,56 @@
+
+<!-- saved from url=(0059)http://students.info.uaic.ro/~cosmin.chiriac/LoginPage.html -->
+<html wtx-context="D10AF39B-1787-4D2A-8D1E-B202BDA329B9"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <div class="main"> 
+        <div><img src="logo.svg"> </div>
+        <fieldset id="first">
+            <h2 class="title">Login</h2>
+            <video autoplay></video>
+        </fieldset>
+        <fieldset id="secondfirst">
+            <p>New to us?<a href="http://students.info.uaic.ro/~cosmin.chiriac/SignUp.html">SignaUp</a></p>  
+        </fieldset>
+    </div>
+
+  <script src="../build/qcode-decoder.min.js"></script>
+  <script type="text/javascript">
+
+  (function () {
+    'use strict';
+    var qr = new QCodeDecoder();
+    if (!(qr.isCanvasSupported() && qr.hasGetUserMedia())) {
+      alert('Your browser doesn\'t match the required specs.');
+      throw new Error('Canvas and getUserMedia are required');
+    }
+    var video = document.querySelector('video');
+    var reset = document.querySelector('#reset');
+    var stop = document.querySelector('#stop');
+    function resultHandler (err, result) {
+      if (err)
+        return console.log(err.message);
+      alert(result);
+    }
+    // prepare a canvas element that will receive
+    // the image to decode, sets the callback for
+    // the result and then prepares the
+    // videoElement to send its source to the
+    // decoder.
+    qr.decodeFromCamera(video, resultHandler);
+    // attach some event handlers to reset and
+    // stop whenever we want.
+    reset.onclick = function () {
+      qr.decodeFromCamera(video, resultHandler);
+    };
+    stop.onclick = function () {
+      qr.stop();
+    };
+  })();
+  </script>
+
+</body></html>
