@@ -1,0 +1,120 @@
+<!-- saved from url=(0018)https://webqr.com/ -->
+<html wtx-context="BD83CE9D-1BAE-42E1-850F-4B6826CC1F95">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web QR</title>
+    <link href="LoginPage.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+        
+        img {
+            border: 0;
+        }
+        #v {
+            width: 320px;
+            height: 240px;
+        }
+        
+        #qr-canvas {
+            display: none;
+        }
+        #outdiv {
+            width: 100%;
+            height: 240px;
+            border: solid;
+            border-width: 3px 3px 3px 3px;
+        }
+        
+        #result {
+            border: solid;
+            border-width: 1px 1px 1px 1px;
+            padding: 5px;
+            width: 80%;
+        }               
+    </style>
+
+    <script src="./Web QR_files/cb=gapi.loaded_1" async=""></script>
+    <script type="text/javascript" async="" src="./Web QR_files/ga.js.download"></script>
+    <script src="./Web QR_files/cb=gapi.loaded_0" async=""></script>
+    <script type="text/javascript" src="./Web QR_files/llqrcode.js.download"></script>
+    <script type="text/javascript" src="./Web QR_files/plusone.js.download" gapi_processed="true"></script>
+    <script type="text/javascript" src="./Web QR_files/webqr.js.download"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24451557-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</head>
+
+<body>
+     <div class="main"> 
+        <div><img src="logo.svg"> </div>
+    <fieldset id="first">
+       
+            <table class="tsel" border="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td valign="top" align="center" width="50%">
+                            <table class="tsel" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td><img class="selector" id="qrimg" src="./Web QR_files/vid.svg" onclick="setwebcam()"
+                                                align="left" style="opacity: 1;"></td>
+                                        <td><img class="selector" id="qrimg" src="./Web QR_files/cam.svg" onclick="setimg()"
+                                                align="right" style="opacity: 0.2;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <div id="outdiv">
+                                                <video id="v" autoplay="" src="blob:https://webqr.com/4fb9a958-e1ed-445f-859f-4b2d54fa10a8"></video>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <div id="result">- scanning -</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- webqr_2016 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8418802408648518" data-ad-slot="2527990541" data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+
+            </script>
+       
+    <canvas id="qr-canvas" width="800" height="600" style="width: 800px; height: 600px;"></canvas>
+
+    <script type="text/javascript">
+                load();
+    </script>
+    <iframe name="oauth2relay949606617" id="oauth2relay949606617" src="./Web QR_files/postmessageRelay.html" tabindex="-1" aria-hidden="true"
+        style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+    <input id="login_btn" onclick="login_btn()" type="button" value="Login">
+    <input id="login_btn_qr" onclick="login_btn_qr()" type="button" value="QR Login">
+    </fieldset>
+    <fieldset id="secondlog">
+            <p>New to us?<a href="SignUp.html">SignUp</a></p>  
+     </fieldset>
+     </div>
+</body>
+
+</html>
