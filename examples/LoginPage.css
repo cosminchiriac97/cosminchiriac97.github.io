@@ -159,18 +159,17 @@ img {
               }
 }
 
-.videoInsert {
-    position: absolute; 
-    right: 0; 
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto; 
-    height: auto; 
-    z-index: -100;
-    background-size: cover;
-    overflow: hidden;
+video{ 
+border: 1px solid #ccc; 
+padding: 20px; margin: 10px; border-radius: 20px; /* tranzitionstransitions applied to the vodeovideo element */
+-moz-transition: all 1s ease-in-out;
+-webkit-transition: all 1s ease-in-out; 
+-o-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
 }
+
+
 
 #first{
 display:block;
