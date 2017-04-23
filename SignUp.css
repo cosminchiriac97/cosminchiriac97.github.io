@@ -91,12 +91,12 @@ img {
              }
              input[type=button],input[type=submit],input[id=download]{
                         font-size: 120%;
-                        height:50px;
+                        height:40px;
              }
              input[type=text],input[type=password]{
                         font-size: 120%;
-                        height:50px;
-                        margin:8px 0;
+                        height:40px;
+                        margin:7px 0;
               }
              #first,fieldset{
                     padding:20px;
@@ -111,16 +111,16 @@ img {
              .main{
                     margin: auto;
                     width: 55%;
-                    margin-top:5%;
+                    margin-top:3%;
              }     
              input[type=button],input[type=submit],input[id=download]{
                         font-size: 130%;
                         height:50px;
                }
              input[type=text],input[type=password]{
-                        margin:10px 0;
+                        margin:7px 0;
                         font-size: 130%;
-                        height:50px;
+                        height:40px;
               }
               #first,fieldset{
                     padding:20px;
@@ -134,16 +134,16 @@ img {
              .main{
                     margin: auto;
                     width: 35%;
-                    margin-top:5%;
+                    margin-top:3%;
              } 
               input[type=button],input[type=submit],input[id=download]{
                         font-size: 130%;
                         height:50px;
                }
              input[type=text],input[type=password]{
-                        margin:10px 0;
+                        margin:7px 0;
                         font-size: 130%;
-                        height:50px;
+                        height:40px;
               }   
               #first,fieldset{
                     padding:20px;
@@ -164,7 +164,7 @@ fieldset{
 display:none;
 margin: auto;
 width:100%;
-margin-top: 10%;
+margin-top: 5%;
 border-radius:5px;
 box-shadow:3px 3px 20px 1px gray;
 }
