@@ -162,7 +162,7 @@ img {
 video{ 
     border: 1px solid #ccc; 
     padding: 20px; margin: 10px;
-    width: 80%;
+    width: 50%;
     height: 70%;
     border-radius: 20px; /* tranzitionstransitions applied to the vodeovideo element */
     -moz-transition: all 1s ease-in-out;
