@@ -11,7 +11,6 @@
 /**
  * Constructor for QCodeDecoder
  */
-var localstream;
 function QCodeDecoder () {
   if (!(this instanceof QCodeDecoder))
     return new QCodeDecoder();
@@ -19,7 +18,6 @@ function QCodeDecoder () {
   this.timerCapture = null;
   this.canvasElem = null;
   this.stream = null;
-  localStream = this.stream;
   this.videoConstraints = {video: true, audio: false};
 }
 
@@ -179,9 +177,9 @@ QCodeDecoder.prototype.decodeFromImage = function (img, cb) {
  * captured by prepareToVideo
  */
 QCodeDecoder.prototype.stop = function() {
-  if (localStream) {
-    localStream.stop();
-    localStream = undefined;
+  if (this.stream) {
+    this.stream.getTracks().forEach(function (track) { track.stop(); });
+    this.stream = undefined;
   }
 
   if (this.timerCapture) {

@@ -1,33 +1,11 @@
-    'use strict';
-    var qr = new QCodeDecoder();
-    if (!(qr.isCanvasSupported() && qr.hasGetUserMedia())) {
-      alert('Your browser doesn\'t match the required specs.');
-      throw new Error('Canvas and getUserMedia are required');
-    }
-    var video = document.querySelector('video');
-    var reset = document.querySelector('#reset');
-    var stop = document.querySelector('#stop');
-    function resultHandler (err, result) {
-      if (err)
-        return console.log(err.message);
-      alert(result);
-    }
-    // prepare a canvas element that will receive
-    // the image to decode, sets the callback for
-    // the result and then prepares the
-    // videoElement to send its source to the
-    // decoder.
-    
-    function login_btn(){
-      document.getElementById("first").style.display = "block";
-      document.getElementById("second").style.display = "none"; 
-      qr.stop();
-    }
-     function login_btn_qr(){
-      qr.decodeFromCamera(video, resultHandler);
-      document.getElementById("first").style.display = "none";
-      document.getElementById("second").style.display = "block"; 
-    }
+
+function login_btn() {
+  window.location = "LoginPage.html";
+}
+
+function login_btn_qr() { 
+   window.location = "LoginPage1.html";
+}
 
 
 
