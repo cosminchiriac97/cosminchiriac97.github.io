@@ -15,9 +15,9 @@ img {
         {
                 .main{
                     margin: auto;
-                    width: 100%;
+                    width: 90%;
                     margin-top:15%;
-                    margin-left: 8%;
+                    margin-left: 3%;
                     }
              input[type=button],input[type=submit]{
                         font-size: 70%;
