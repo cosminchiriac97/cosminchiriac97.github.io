@@ -161,10 +161,9 @@ img {
 
 video{ 
     border: 1px solid #ccc; 
-    padding: 20px; margin: 10px;
-    position: absolute;
-    width: 20%;
-    height: 50%;
+    padding: 10px; margin: 10px;
+    width: 100%;
+    margin: auto;
     border-radius: 20px; /* tranzitionstransitions applied to the vodeovideo element */
     -moz-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out; 
@@ -203,7 +202,7 @@ input[type=submit],input[type=button]{
 width:49%;
 margin:auto 0;
 padding:5px;
-
+margin-top: 5%;
 background-color:#ccc;
 border:none;
 border-radius:4px;
