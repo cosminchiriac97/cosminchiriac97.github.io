@@ -90,15 +90,15 @@ img {
              .main{
                     margin: auto;
                     width: 60%;
-                    margin-top:5%;
+                    margin-top:3%;
              }
              input[type=button],input[type=submit]{
                         font-size: 120%;
-                        height:50px;
+                        height:40px;
              }
              input[type=text],input[type=password]{
                         font-size: 120%;
-                        height:50px;
+                        height:40px;
                         margin:8px 0;
               }
              #first,fieldset{
@@ -115,16 +115,16 @@ img {
              .main{
                     margin: auto;
                     width: 55%;
-                    margin-top:5%;
+                    margin-top:2%;
              }     
              input[type=button],input[type=submit]{
                         font-size: 130%;
-                        height:50px;
+                        height:40px;
                }
              input[type=text],input[type=password]{
                         margin:10px 0;
                         font-size: 130%;
-                        height:50px;
+                        height:40px;
               }
               #first,fieldset{
                     padding:20px;
@@ -140,16 +140,16 @@ img {
              .main{
                     margin: auto;
                     width: 35%;
-                    margin-top:5%;
+                    margin-top:2%;
              } 
               input[type=button],input[type=submit]{
                         font-size: 130%;
-                        height:50px;
+                        height:40px;
                }
              input[type=text],input[type=password]{
                         margin:10px 0;
                         font-size: 130%;
-                        height:50px;
+                        height:40px;
               }   
               #first,fieldset{
                     padding:20px;
@@ -186,6 +186,7 @@ box-shadow:3px 3px 5px 3px gray
 display:block;
 width: 100%;
 margin-top:3%;
+padding: 0px;
 border-radius:5px;
 box-shadow:3px 3px 5px 1px white
 }
