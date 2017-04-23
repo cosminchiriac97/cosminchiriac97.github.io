@@ -17,9 +17,16 @@
     // the result and then prepares the
     // videoElement to send its source to the
     // decoder.
-    qr.decodeFromCamera(video, resultHandler);
+    
     function login_btn(){
+      document.getElementById("first").style.display = "block";
+      document.getElementById("second").style.display = "none"; 
       qr.stop();
+    }
+     function login_btn_qr(){
+      qr.decodeFromCamera(video, resultHandler);
+      document.getElementById("first").style.display = "none";
+      document.getElementById("second").style.display = "block"; 
     }
 
 
