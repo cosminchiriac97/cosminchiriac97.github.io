@@ -13,7 +13,7 @@ function validation(event) {
         }
     }
     if (count != 0) {
-        alert("*All Fields are mandatory*"); // Notifying validation
+        modal("*All Fields are mandatory*"); // Notifying validation
         event.preventDefault();
     } else {
         return true;
@@ -47,7 +47,7 @@ function qrGenerator(qr) {
 function next_step1() {
     var input_field = document.getElementsByClassName('text_field');
     if (input_field[0].value == '') {
-        alert("*Email field is mandatory*");
+        modal("*Email field is mandatory*");
         event.preventDefault();
     }
     else {
@@ -72,3 +72,20 @@ function prev_step2() {
     document.getElementById("second").style.display = "block";
 }
 
+function modal(text){
+
+var modal = document.getElementById('myModal');
+
+var span = document.getElementsByClassName("close")[0];
+modal.style.display = "block";
+document.getElementById("text-modal").textContent=text;
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+}
