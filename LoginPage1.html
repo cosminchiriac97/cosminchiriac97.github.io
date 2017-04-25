@@ -35,7 +35,7 @@
         function resultHandler(err, result) {
             if (err)
                 return console.log(err.message);
-            modal(result);
+            alert(result);
         }
         qr.decodeFromCamera(video, resultHandler);
     </script>
